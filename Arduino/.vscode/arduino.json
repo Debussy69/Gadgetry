@@ -1,0 +1,6 @@
+{
+    "board": "arduino:samd:nano_33_iot",
+    "port": "COM9",
+    "programmer": "arduino:sam_ice",
+    "sketch": "src\\Clock.ino"
+}
