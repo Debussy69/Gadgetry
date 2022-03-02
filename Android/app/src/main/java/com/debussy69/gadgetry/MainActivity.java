@@ -13,6 +13,7 @@ import com.debussy69.gadgetry.ui.ToDoListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String GIT_TOKEN = "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";
 
     ToDoListFragment toDoListFragment;
     HabitTrackerFragment habitTrackerFragment;
@@ -49,5 +50,26 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragment_container, fragment)
                 .commit();
         return true;
+    }
+
+    public static String weekdayToString(int weekday) {
+        switch (weekday) {
+            case 0:
+                return "Mo";
+            case 1:
+                return "Tu";
+            case 2:
+                return "We";
+            case 3:
+                return "Th";
+            case 4:
+                return "Fr";
+            case 5:
+                return "Sa";
+            case 6:
+                return "Su";
+            default:
+                return "";
+        }
     }
 }
